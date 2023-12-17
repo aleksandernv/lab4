@@ -1,0 +1,23 @@
+VAR
+	URTK1 : URTK := (0);
+	URTKView_0 : URTKView := (0);
+	urtk_out : URTK;
+	sensorX1 : USINT;
+	sensorX2 : USINT;
+	sensorY1 : USINT;
+	sensorY2 : USINT;
+	sensorZ1 : USINT;
+	sensorZ2 : USINT;
+	g_command : STRING[80] := 'G01 X000 Y000 Z000 F1000';
+	flag_wait : UINT := 3;
+	t_start : REAL := 0.0;
+	X : REAL := 34;
+	Y : REAL := 0.0;
+	Z : REAL := 0.0;
+	X_target : REAL;
+	Y_target : REAL;
+	counter : UDINT := 0;
+	Z_target : REAL;
+	V : UINT := 0;
+	string_to_number : STRING[80];
+END_VAR
